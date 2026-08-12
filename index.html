@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <title>BMC – Business Model Canvas | Tự học tương tác</title>
+  <meta name="description" content="Website tự học tương tác Business Model Canvas dành cho học sinh THPT.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">BMC</span><span>Startup Challenge</span></a>
+    <nav>
+      <a href="#why">WHY</a>
+      <a href="#learn">9 ô BMC</a>
+      <a href="#grab">Grab</a>
+      <a href="#challenge">Thử thách</a>
+      <a href="#quiz">Kiểm tra</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="Đổi giao diện">◐</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-media">
+        <img src="assets/hero.png" alt="Business Model Canvas & Startup Challenge">
+      </div>
+      <div class="hero-overlay">
+        <span class="eyebrow">TỰ HỌC TƯƠNG TÁC • KHỐI 11</span>
+        <h1>Từ ý tưởng đến <span>mô hình kinh doanh</span></h1>
+        <p>Một ý tưởng hay đã đủ để tạo nên một startup?</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#why">Bắt đầu học</a>
+          <a class="btn ghost" href="#challenge">Vào Startup Challenge</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-wrap">
+      <div class="progress-head"><strong>Tiến độ tự học</strong><span id="progressText">0%</span></div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <p class="micro">Hoàn thành các checkpoint để mở khóa huy hiệu cuối bài.</p>
+    </section>
+
+    <section id="why" class="section">
+      <div class="section-head">
+        <span class="kicker">01 • WHY</span>
+        <h2>Vì sao cần Business Model Canvas?</h2>
+        <p>Startup có rất nhiều giả định. BMC giúp chúng ta nhìn, thảo luận, kiểm chứng và thay đổi mô hình nhanh hơn.</p>
+      </div>
+
+      <div class="scenario-card">
+        <div>
+          <span class="tag purple">TÌNH HUỐNG</span>
+          <h3>StudyBuddy AI</h3>
+          <p>“AI giúp học sinh quản lý bài tập, deadline và tự động lập kế hoạch học tập.”</p>
+          <h4>Ý tưởng này có thể trở thành BUSINESS?</h4>
+          <div class="choice-row" data-checkpoint="studybuddy">
+            <button class="choice" data-correct="false">A. Có</button>
+            <button class="choice" data-correct="false">B. Không</button>
+            <button class="choice" data-correct="true">C. Chưa biết</button>
+          </div>
+          <div class="feedback" aria-live="polite"></div>
+        </div>
+        <div class="question-cloud">
+          <span>👤 Ai sẽ dùng?</span>
+          <span>😣 Họ gặp vấn đề gì?</span>
+          <span>❤️ Tại sao chọn chúng ta?</span>
+          <span>📱 Làm sao tiếp cận?</span>
+          <span>🤝 Ai giúp chúng ta?</span>
+          <span>💰 Ai sẽ trả tiền?</span>
+          <span>💸 Chi phí ở đâu?</span>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <article><b>👁️</b><h3>Nhìn toàn cảnh</h3><p>Toàn bộ logic kinh doanh trên một trang.</p></article>
+        <article><b>⚡</b><h3>Nhanh & linh hoạt</h3><p>Sketch → Test → Change bằng sticky notes.</p></article>
+        <article><b>🔗</b><h3>Thấy liên kết</h3><p>9 yếu tố không đứng riêng; thay đổi một ô ảnh hưởng ô khác.</p></article>
+        <article><b>🤝</b><h3>Dễ chia sẻ</h3><p>Một canvas tạo ngôn ngữ chung cho cả đội.</p></article>
+      </div>
+
+      <div class="compare">
+        <div><h3>Business Plan</h3><p>📄 Nhiều trang<br>🧾 Nhiều chi tiết<br>🐢 Chậm thay đổi</p></div>
+        <div class="vs">VS</div>
+        <div><h3>Business Model Canvas</h3><p>🗺️ 1 trang<br>👀 Nhìn nhanh<br>⚡ Thay đổi nhanh<br>💬 Thảo luận nhanh</p></div>
+      </div>
+      <button class="checkpoint btn secondary" data-key="whyDone">✓ Tôi đã hiểu WHY</button>
+    </section>
+
+    <section id="learn" class="section alt">
+      <div class="section-head">
+        <span class="kicker">02 • HOW</span>
+        <h2>Đừng học thuộc 9 ô. Hãy nhớ 4 câu hỏi.</h2>
+        <div class="four-questions">
+          <span>👥 <b>WHO?</b> Khách hàng</span>
+          <span>❤️ <b>WHAT?</b> Giá trị</span>
+          <span>⚙️ <b>HOW?</b> Cách vận hành</span>
+          <span>💰 <b>MONEY?</b> Tiền đến & đi</span>
+        </div>
+      </div>
+
+      <div class="bmc-layout" id="bmcLayout">
+        <button class="bmc-box partners" data-bmc="partners"><span>8</span><b>Đối tác chính</b><small>Key Partners</small></button>
+        <button class="bmc-box activities" data-bmc="activities"><span>6</span><b>Hoạt động chính</b><small>Key Activities</small></button>
+        <button class="bmc-box resources" data-bmc="resources"><span>7</span><b>Nguồn lực chính</b><small>Key Resources</small></button>
+        <button class="bmc-box value" data-bmc="value"><span>2</span><b>Giá trị cung cấp</b><small>Value Propositions</small></button>
+        <button class="bmc-box relationships" data-bmc="relationships"><span>5</span><b>Quan hệ khách hàng</b><small>Customer Relationships</small></button>
+        <button class="bmc-box channels" data-bmc="channels"><span>3</span><b>Kênh tiếp cận</b><small>Channels</small></button>
+        <button class="bmc-box customers" data-bmc="customers"><span>1</span><b>Phân khúc khách hàng</b><small>Customer Segments</small></button>
+        <button class="bmc-box costs" data-bmc="costs"><span>9</span><b>Cơ cấu chi phí</b><small>Cost Structure</small></button>
+        <button class="bmc-box revenue" data-bmc="revenue"><span>4</span><b>Dòng doanh thu</b><small>Revenue Streams</small></button>
+      </div>
+      <div id="bmcDetail" class="detail-panel">
+        <h3>👆 Chọn một ô BMC</h3>
+        <p>Mỗi ô sẽ hiện câu hỏi định hướng, giải thích ngắn và ví dụ.</p>
+      </div>
+      <button class="checkpoint btn secondary" data-key="bmcDone">✓ Tôi đã khám phá đủ 9 ô</button>
+    </section>
+
+    <section id="grab" class="section">
+      <div class="section-head">
+        <span class="kicker">03 • STARTUP DETECTIVE</span>
+        <h2>“Mổ xẻ” mô hình Grab</h2>
+        <p>Grab là một ví dụ tốt về nền tảng nhiều phía: người dùng, tài xế và merchant đều nhận những giá trị khác nhau.</p>
+      </div>
+      <div class="grab-grid">
+        <div class="ecosystem">
+          <button data-side="user">👤 Người dùng</button>
+          <button data-side="driver">🚗 Tài xế</button>
+          <button data-side="merchant">🍜 Nhà hàng / Merchant</button>
+          <div id="grabValue" class="grab-value">Chọn một nhóm để xem giá trị họ nhận được.</div>
+          <div class="network-question">
+            <strong>Thử nghĩ:</strong> Nếu 50% tài xế rời nền tảng, điều gì có thể xảy ra với người dùng và toàn bộ mô hình?
+            <textarea id="networkAnswer" placeholder="Viết suy nghĩ của bạn..."></textarea>
+            <button class="btn small secondary" id="networkSave">Lưu suy nghĩ</button>
+          </div>
+        </div>
+        <figure class="figure-card">
+          <img src="assets/grab-bmc.png" alt="Business Model Canvas Grab 2026">
+          <figcaption>Ví dụ BMC Grab 2026 trong bài trình bày.</figcaption>
+        </figure>
+      </div>
+      <button class="checkpoint btn secondary" data-key="grabDone">✓ Tôi đã phân tích ví dụ Grab</button>
+    </section>
+
+    <section id="challenge" class="section alt">
+      <div class="section-head">
+        <span class="kicker">04 • WHAT</span>
+        <h2>Startup Challenge Builder</h2>
+        <p>Tạo một startup giải quyết <b>MỘT vấn đề thực tế của học sinh THPT</b>. Dữ liệu tự lưu trên trình duyệt của bạn.</p>
+      </div>
+
+      <div class="idea-seeds">
+        <button data-seed="Học tập">📚 Học tập</button>
+        <button data-seed="Thời gian">⏰ Thời gian</button>
+        <button data-seed="Ăn uống">🍱 Ăn uống</button>
+        <button data-seed="Đi lại">🚲 Đi lại</button>
+        <button data-seed="Môi trường">♻️ Môi trường</button>
+        <button data-seed="AI">🤖 AI</button>
+      </div>
+
+      <form id="startupForm" class="startup-form">
+        <label>Tên startup<input name="name" placeholder="Ví dụ: StudyBuddy"></label>
+        <label>1. Vấn đề<textarea name="problem" placeholder="Học sinh đang gặp vấn đề gì? Mô tả thật cụ thể."></textarea></label>
+        <label>2. Khách hàng<textarea name="customer" placeholder="Ai thực sự có vấn đề này? Tránh viết quá rộng như 'học sinh'."></textarea></label>
+        <label>3. Giá trị / Giải pháp<textarea name="value" placeholder="Chúng tôi giúp [khách hàng] giải quyết [vấn đề] bằng [giá trị/giải pháp]."></textarea></label>
+        <div class="form-grid">
+          <label>Kênh tiếp cận<textarea name="channels" placeholder="App, mạng xã hội, trường học, đối tác..."></textarea></label>
+          <label>Quan hệ khách hàng<textarea name="relationships" placeholder="Hỗ trợ, self-service, cộng đồng, loyalty..."></textarea></label>
+          <label>Dòng doanh thu<textarea name="revenue" placeholder="Ai trả tiền? Subscription, commission, ads..."></textarea></label>
+          <label>Cơ cấu chi phí<textarea name="costs" placeholder="Tech, nhân sự, marketing, vận hành..."></textarea></label>
+          <label>Hoạt động chính<textarea name="activities" placeholder="Những việc quan trọng nhất phải làm."></textarea></label>
+          <label>Nguồn lực chính<textarea name="resources" placeholder="Con người, công nghệ, dữ liệu, thương hiệu..."></textarea></label>
+          <label class="wide">Đối tác chính<textarea name="partners" placeholder="Ai có thể giúp startup hoạt động tốt hơn?"></textarea></label>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn secondary" id="previewBtn">Xem BMC của tôi</button>
+          <button type="button" class="btn ghost-dark" id="clearBtn">Xóa dữ liệu</button>
+        </div>
+      </form>
+
+      <div id="studentCanvas" class="student-canvas hidden"></div>
+
+      <div class="stress-test">
+        <h3>💥 Stress Test</h3>
+        <p>Chọn ít nhất một câu hỏi để “phá” mô hình của chính bạn:</p>
+        <div class="stress-grid">
+          <button>Tại sao khách hàng cần nó?</button>
+          <button>Ai sẽ trả tiền?</button>
+          <button>Đối thủ là ai?</button>
+          <button>Chi phí lớn nhất?</button>
+          <button>Giả định nào có thể sai?</button>
+        </div>
+        <textarea id="stressAnswer" placeholder="Lỗ hổng lớn nhất của mô hình là..."></textarea>
+      </div>
+
+      <div class="pitch-builder">
+        <h3>🎤 60-second Pitch</h3>
+        <button id="buildPitch" class="btn primary">Tạo dàn ý pitch từ BMC</button>
+        <div id="pitchOutput" class="pitch-output">Điền Startup Challenge rồi bấm nút để tạo dàn ý.</div>
+      </div>
+      <button class="checkpoint btn secondary" data-key="challengeDone">✓ Tôi đã hoàn thành Startup Challenge</button>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="section-head">
+        <span class="kicker">05 • CHECK YOUR UNDERSTANDING</span>
+        <h2>Mini Quiz</h2>
+        <p>5 câu hỏi. Mục tiêu: hiểu logic BMC, không chỉ nhớ tên 9 ô.</p>
+      </div>
+      <div id="quizBox" class="quiz-box"></div>
+      <div id="quizResult" class="quiz-result"></div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-copy">
+        <span class="kicker">06 • REFLECT</span>
+        <h2>Một ý tưởng tuyệt vời chưa phải là một doanh nghiệp tuyệt vời.</h2>
+        <p class="big-flow">👤 CUSTOMER → 😣 PROBLEM → ❤️ VALUE → 🚀 BUSINESS MODEL</p>
+        <p>Hiểu khách hàng. Tạo giá trị. Xây mô hình. Kiểm chứng và cải tiến.</p>
+        <div id="badge" class="badge locked">🔒 Hoàn thành các checkpoint để mở huy hiệu</div>
+      </div>
+      <img src="assets/closing.png" alt="Thông điệp kết thúc Business Model Canvas">
+    </section>
+  </main>
+
+  <footer>
+    <p>Business Model Canvas – Website tự học tương tác • Nội dung được chuyển thể từ bài trình bày chuyên đề.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
